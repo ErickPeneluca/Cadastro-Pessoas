@@ -1,16 +1,32 @@
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\projeto.exe
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\projeto.deps.json
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\projeto.runtimeconfig.json
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\projeto.runtimeconfig.dev.json
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\projeto.dll
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\ref\projeto.dll
-C:\Users\Erick\Desktop\projeto\bin\Debug\net5.0\projeto.pdb
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.csproj.AssemblyReference.cache
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.AssemblyInfoInputs.cache
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.AssemblyInfo.cs
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.csproj.CoreCompileInputs.cache
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.dll
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\ref\projeto.dll
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.pdb
-C:\Users\Erick\Desktop\projeto\obj\Debug\net5.0\projeto.genruntimeconfig.cache
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/projeto.exe
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/projeto.deps.json
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/projeto.runtimeconfig.json
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/projeto.runtimeconfig.dev.json
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/projeto.dll
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/ref/projeto.dll
+C:/Users/Erick/Desktop/projeto/bin/Debug/net5.0/projeto.pdb
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.csproj.AssemblyReference.cache
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.AssemblyInfoInputs.cache
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.AssemblyInfo.cs
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.csproj.CoreCompileInputs.cache
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.dll
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/ref/projeto.dll
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.pdb
+C:/Users/Erick/Desktop/projeto/obj/Debug/net5.0/projeto.genruntimeconfig.cache
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/projeto
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/projeto.deps.json
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/projeto.runtimeconfig.json
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/projeto.runtimeconfig.dev.json
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/projeto.dll
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/ref/projeto.dll
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/bin/Debug/net5.0/projeto.pdb
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.csproj.AssemblyReference.cache
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.GeneratedMSBuildEditorConfig.editorconfig
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.AssemblyInfoInputs.cache
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.AssemblyInfo.cs
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.csproj.CoreCompileInputs.cache
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.dll
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/ref/projeto.dll
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.pdb
+/home/peneluca/Área de Trabalho/Cadastro-Pessoas/obj/Debug/net5.0/projeto.genruntimeconfig.cache

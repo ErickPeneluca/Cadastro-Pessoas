@@ -11,8 +11,17 @@ namespace projeto
             throw new System.NotImplementedException();
         }
 
-            public bool ValidarCnpj(string cnpj){
-                return true ;
+        public bool ValidarCnpj(string cnpj)
+        {
+
+            if (cnpj.Length == 14 && cnpj.Substring(8,4) == "0001")
+            {
+                    return true;   
             }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
