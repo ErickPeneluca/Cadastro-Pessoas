@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Globalization;
 
 namespace projeto
 {
@@ -58,8 +59,7 @@ namespace projeto
                         novoEnd.enderecoComercial = true;
 
                         novaPf.endereco = novoEnd;
-                        novaPf.rendimento = 5000.00f;
-
+                        novaPf.rendimento = 5000.50f;
 
                         Console.WriteLine(@$"
 
@@ -72,7 +72,9 @@ namespace projeto
     Rua : {novaPf.endereco.logradouro}
     Numero : {novaPf.endereco.numero}
     Complemento : {novaPf.endereco.complemento}
-    Comercial : {novaPf.endereco.enderecoComercial}            
+    Comercial : {novaPf.endereco.enderecoComercial}  
+    Rendimento: {novaPf.rendimento}
+    Taxa de rendimento: {pfMetodos.PagarImposto(novaPf.rendimento).ToString("C")}          
         ");
                         Thread.Sleep(2000);
 
@@ -95,20 +97,24 @@ namespace projeto
                         novoEndPj.enderecoComercial = true;
 
                         novaPj.endereco = novoEndPj;
-                        novaPj.rendimento = 5000.00f;
+                        novaPj.rendimento = 3000.28f;
+
+                        string validarCnpj = pjMetodos.ValidarCnpj(novaPj.cnpj) ? "Valido" : "Invalido";
 
                         Console.WriteLine(@$"
 
                 
-
     Nome : {novaPj.nome}
     Cnpj : {novaPj.cnpj}
     Razao social : {novaPj.razaoSocial}	              
-    Cnpj valido : {pjMetodos.ValidarCnpj(novaPj.cnpj)}              
+    Cnpj valido : {validarCnpj}              
     Rua : {novaPj.endereco.logradouro} 
     Numero : {novaPj.endereco.numero}                           
     Complemento : {novaPj.endereco.complemento}                                          
-    Comercial : {novaPj.endereco.enderecoComercial}              
+    Comercial : {novaPj.endereco.enderecoComercial}
+    rendimento:{novaPj.rendimento}    
+    Taxa de imposto:{pjMetodos.PagarImposto(novaPj.rendimento).ToString("C")}          
+                
                 ");
                         Thread.Sleep(2000);
                         break;
