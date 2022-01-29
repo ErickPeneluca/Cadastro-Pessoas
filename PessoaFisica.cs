@@ -43,5 +43,22 @@ namespace projeto
                 return taxa;
             }
         }
+        public override string ToString()
+        {
+            return @$"
+            Nome : {nome},
+            Cpf : {cpf},
+            Data de Nascimento : {dataNascimento},
+            Data valida : {ValidarDataDeNascimento(dataNascimento)},
+            Rua : {endereco.logradouro},
+            Numero : {endereco.numero},
+            Complemento : {endereco.complemento},
+            Comercial : {endereco.enderecoComercial},
+            Rendimento: {rendimento},
+            Taxa de rendimento: {PagarImposto(rendimento).ToString("C")}
+
+            ";
+        }
+
     }
 }

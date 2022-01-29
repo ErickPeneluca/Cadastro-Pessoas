@@ -1,0 +1,13 @@
+
+            Nome : Jose da silva marques,
+            Cpf : 899.265.303-92,
+            Data de Nascimento : 13/03/1990 00:00:00,
+            Data valida : True,
+            Rua : Avenida Brasil,
+            Numero : 82,
+            Complemento : ,
+            Comercial : False,
+            Rendimento: 13500,
+            Taxa de rendimento: R$ 675,00
+
+            

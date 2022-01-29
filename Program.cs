@@ -2,6 +2,7 @@
 using System.Threading;
 using System.Globalization;
 using System.Collections.Generic;
+using System.IO;
 
 namespace projeto
 {
@@ -147,6 +148,11 @@ namespace projeto
 
                                     listaPf.Add(novaPf);
 
+
+                                    using (StreamWriter sw = new StreamWriter($"{novaPf.nome}.txt"))
+                                    {
+                                        sw.Write(novaPf);
+                                    }
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine($"Essa pessoa foi adicionada com sucesso!");
                                     Console.ResetColor();
@@ -158,6 +164,8 @@ namespace projeto
                                     {
                                         Console.ForegroundColor = ConsoleColor.DarkRed;
                                         Console.WriteLine($"Por favor insira uma pessoa antes!");
+                                        Console.WriteLine($"Pressione enter para continuar");
+                                        Console.ReadLine();
                                         Thread.Sleep(2000);
                                         Console.ResetColor();
                                     }
@@ -182,9 +190,30 @@ Taxa de rendimento: {pfMetodos.PagarImposto(item.rendimento).ToString("C")}
                                         }
                                     }
 
+                                    Console.WriteLine($"Voce gostaria de ler algum arquivo de texto? (S/n)");
 
-                                    Console.WriteLine($"Pressione enter para continuar...");
+                                    string respostaLerRegistro = Console.ReadLine();
+
+                                    if (respostaLerRegistro == "S" || respostaLerRegistro == "s")
+                                    {
+                                        Console.WriteLine($"Insira o nome do arquivo");
+                                        string nomeDoRegistro = Console.ReadLine();
+
+                                        using (StreamReader sr = new StreamReader(nomeDoRegistro))
+                                        {
+                                            string linha;
+
+                                            while ((linha = sr.ReadLine()) != null)
+                                            {
+                                                Console.WriteLine($"{linha}");
+                                            }
+                                        }
+                                    }
+                                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                                    Thread.Sleep(9000);
+                                    Console.WriteLine($"Pressione enter para processeguir");
                                     Console.ReadLine();
+                                    Console.ResetColor();
 
                                     break;
                                 case "3":
@@ -220,12 +249,12 @@ Taxa de rendimento: {pfMetodos.PagarImposto(item.rendimento).ToString("C")}
                             Console.ResetColor();
                             opcaoPj = Console.ReadLine();
                             PessoaJuridica pjMetodos = new PessoaJuridica();
-
+                            PessoaJuridica novaPj = new PessoaJuridica();
                             switch (opcaoPj)
                             {
                                 case "1":
 
-                                    PessoaJuridica novaPj = new PessoaJuridica();
+
                                     Endereco novoEndPj = new Endereco();
 
                                     Console.WriteLine($"Digite o nome");
@@ -294,6 +323,9 @@ Taxa de rendimento: {pfMetodos.PagarImposto(item.rendimento).ToString("C")}
 
                                     novaPj.endereco = novoEndPj;
 
+                                    pjMetodos.VerificarPastaEArquivo(pjMetodos.caminho);
+                                    pjMetodos.Inserir(novaPj);
+
                                     listaPj.Add(novaPj);
 
                                     Console.ForegroundColor = ConsoleColor.Green;
@@ -302,13 +334,38 @@ Taxa de rendimento: {pfMetodos.PagarImposto(item.rendimento).ToString("C")}
 
                                     break;
                                 case "2":
+
                                     Console.Clear();
+
                                     if (listaPj.Count == 0)
                                     {
+                                        List<PessoaJuridica> listaPjMet = pjMetodos.Ler();
+                                        if (listaPjMet.Count > 0)
+                                        {
+                                            foreach (PessoaJuridica cadaPJ in listaPjMet)
+                                            {
+                                                Console.WriteLine($@"
+                                                           
+        nome {cadaPJ.nome}
+        razao social {cadaPJ.razaoSocial}
+        cnpj {cadaPJ.cnpj}
+                                                ");
+
+                                                // preciso reswolver esse b.o
+                                                                                
+                                            }
+                                        } else
+                                        {
+                                            Console.WriteLine($"Lista vazia!");
+                                            
+                                        }
                                         Console.ForegroundColor = ConsoleColor.DarkRed;
-                                        Console.WriteLine($"Por favor insira uma pessoa antes!");
+                                        Console.WriteLine($"Pressione enter para continuar");
+                                        Console.ReadLine();
                                         Thread.Sleep(2000);
                                         Console.ResetColor();
+
+
                                     }
                                     else
                                     {
@@ -333,6 +390,7 @@ Taxa de rendimento: {pfMetodos.PagarImposto(item.rendimento).ToString("C")}
                                         Console.WriteLine($"Pressione enter para continuar...");
                                         Console.ReadLine();
                                     }
+
                                     break;
                                 case "3":
 
